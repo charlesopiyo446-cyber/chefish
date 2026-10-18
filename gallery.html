@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery – Cheng Kelo Fresh Fish</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+
+  <header>
+    <input type="checkbox" id="nav-toggle" />
+    <div class="nav-container">
+      <a href="index.html" class="logo-wrap">
+        <img src="images/logo.png" alt="Logo" onerror="this.style.background='#28c2b8';this.style.padding='8px'" />
+        <div class="logo-text-block">
+          <span>Cheng Kelo Fresh Fish</span>
+          <span>Fresh Tilapia Supplier</span>
+        </div>
+      </a>
+      <label for="nav-toggle" class="hamburger-label" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <h1>Our Gallery</h1>
+    <p>Fresh from our shop click any photo to view it larger.</p>
+  </div>
+
+  <!-- GALLERY -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Fresh From Our Shop</h2>
+        <p>Real photos of our tilapia fresh, clean, and ready for you.</p>
+      </div>
+
+      <!-- Grid of clickable thumbnails (anchor to lightbox ID) -->
+      <div class="gallery-grid">
+        <a href="#img1" class="gallery-item">
+          <img src="images/fish1.jpg" alt="Fresh Tilapia 1"
+               onerror="this.src='https://placehold.co/400x400/0a6ebd/white?text=Tilapia+1'" />
+        </a>
+        <a href="#img2" class="gallery-item">
+          <img src="images/fish2.jpg" alt="Fresh Tilapia 2"
+               onerror="this.src='https://placehold.co/400x400/28c2b8/white?text=Tilapia+2'" />
+        </a>
+        <a href="#img3" class="gallery-item">
+          <img src="images/fish3.jpg" alt="Fresh Tilapia 3"
+               onerror="this.src='https://placehold.co/400x400/063a63/white?text=Tilapia+3'" />
+        </a>
+        <a href="#img4" class="gallery-item">
+          <img src="images/fish4.jpg" alt="Fresh Tilapia 4"
+               onerror="this.src='https://placehold.co/400x400/f77f00/white?text=Tilapia+4'" />
+        </a>
+        <a href="#img5" class="gallery-item">
+          <img src="images/fish5.jpg" alt="Fresh Tilapia 5"
+               onerror="this.src='https://placehold.co/400x400/0a6ebd/white?text=Tilapia+5'" />
+        </a>
+        <a href="#img6" class="gallery-item">
+          <img src="images/fish6.jpg" alt="Fresh Tilapia 6"
+               onerror="this.src='https://placehold.co/400x400/28c2b8/white?text=Tilapia+6'" />
+        </a>
+        <a href="#img7" class="gallery-item">
+          <img src="images/fish7.jpg" alt="Fresh Tilapia 7"
+               onerror="this.src='https://placehold.co/400x400/063a63/white?text=Tilapia+7'" />
+        </a>
+        <a href="#img8" class="gallery-item">
+          <img src="images/fish8.jpg" alt="Fresh Tilapia 8"
+               onerror="this.src='https://placehold.co/400x400/f77f00/white?text=Tilapia+8'" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX OVERLAYS (Pure CSS :target) -->
+  <!-- Clicking the thumbnail opens #imgN, clicking backdrop/close returns to # -->
+
+  <div id="img1" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="images/fish1.jpg" alt="Fresh Tilapia 1"
+         onerror="this.src='https://placehold.co/800x600/0a6ebd/white?text=Tilapia+1'" />
+    <p class="lightbox-caption">Fresh Tilapia — Cheng Kelo Fresh Fish</p>
+  </div>
+
+  <div id="img2" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="images/fish2.jpg" alt="Fresh Tilapia 2"
+         onerror="this.src='https://placehold.co/800x600/28c2b8/white?text=Tilapia+2'" />
+    <p class="lightbox-caption">Fresh Tilapia — Cheng Kelo Fresh Fish</p>
+  </div>
+
+  <div id="img3" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="images/fish3.jpg" alt="Fresh Tilapia 3"
+         onerror="this.src='https://placehold.co/800x600/063a63/white?text=Tilapia+3'" />
+    <p class="lightbox-caption">Fresh Tilapia — Cheng Kelo Fresh Fish</p>
+  </div>
+
+  <div id="img4" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="images/fish4.jpg" alt="Fresh Tilapia 4"
+         onerror="this.src='https://placehold.co/800x600/f77f00/white?text=Tilapia+4'" />
+    <p class="lightbox-caption">Fresh Tilapia — Cheng Kelo Fresh Fish</p>
+  </div>
+
+  <div id="img5" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="images/fish5.jpg" alt="Fresh Tilapia 5"
+         onerror="this.src='https://placehold.co/800x600/0a6ebd/white?text=Tilapia+5'" />
+    <p class="lightbox-caption">Fresh Tilapia — Cheng Kelo Fresh Fish</p>
+  </div>
+
+  <div id="img6" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="images/fish6.jpg" alt="Fresh Tilapia 6"
+         onerror="this.src='https://placehold.co/800x600/28c2b8/white?text=Tilapia+6'" />
+    <p class="lightbox-caption">Fresh Tilapia — Cheng Kelo Fresh Fish</p>
+  </div>
+
+  <div id="img7" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="images/fish7.jpg" alt="Fresh Tilapia 7"
+         onerror="this.src='https://placehold.co/800x600/063a63/white?text=Tilapia+7'" />
+    <p class="lightbox-caption">Fresh Tilapia — Cheng Kelo Fresh Fish</p>
+  </div>
+
+  <div id="img8" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="images/fish8.jpg" alt="Fresh Tilapia 8"
+         onerror="this.src='https://placehold.co/800x600/f77f00/white?text=Tilapia+8'" />
+    <p class="lightbox-caption">Fresh Tilapia Cheng Kelo Fresh Fish</p>
+  </div>
+
+  <!-- ORDER CTA -->
+  <section class="section section-alt" style="text-align:center;padding:48px 20px;">
+    <div class="container">
+      <h2 style="color:var(--dark);margin-bottom:10px;">Like What You See?</h2>
+      <p style="color:var(--gray);margin-bottom:24px;">Order your fresh tilapia now direct on WhatsApp.</p>
+      <a href="https://wa.me/256788381850?text=Hello%20Cheng%20Kelo%20Fresh%20Fish%2C%20I%20saw%20your%20gallery%20and%20would%20like%20to%20order%20fish." target="_blank" rel="noopener" class="btn btn-wa">💬 Order on WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    p>© 2026 <strong>Cheng Kelo Fresh Fish</strong> Anaka Town Council &nbsp;·&nbsp;
+    <a href="tel:+256788381850">0788 381 850</a><br/>
+     <a href="tel:+256785893198">0785893198</a> &nbsp;·&nbsp; Fresh Tilapia, Every Day.</p>
+  </footer>
+
+  <div class="float-buttons">
+    <a href="https://wa.me/256788381850?text=Hello%20Cheng%20Kelo%20Fresh%20Fish%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener" class="float-wa" title="Order on WhatsApp">💬</a>
+    <a href="tel:+256788381850" class="float-call" title="Call Us">📞</a>
+  </div>
+
+</body>
+</html>

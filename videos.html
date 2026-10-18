@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Videos – Cheng Kelo Fresh Fish</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  
+  <header>
+    <input type="checkbox" id="nav-toggle" />
+    <div class="nav-container">
+      <a href="index.html" class="logo-wrap">
+        <img src="images/logo.png" alt="Logo" onerror="this.style.background='#28c2b8';this.style.padding='8px'" />
+        <div class="logo-text-block">
+          <span>Cheng Kelo Fresh Fish</span>
+          <span>Fresh Tilapia Supplier</span>
+        </div>
+      </a>
+      <label for="nav-toggle" class="hamburger-label" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="videos.html" class="active">Videos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <h1>Our Videos</h1>
+    <p>Watch short clips of our fresh tilapia, daily operations, and quality handling.</p>
+  </div>
+
+  <!-- VIDEO CARDS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>See Us In Action</h2>
+        <p>Click any video to watch it full screen. Tap ✕ or the background to close.</p>
+      </div>
+
+      <div class="videos-grid">
+
+        <!-- Video 1 -->
+        <div class="video-card">
+          <a href="#vid1" class="video-card-thumb">
+            <img src="images/video-poster1.jpg" alt="Fresh Tilapia Arrival"
+                 onerror="this.src='https://placehold.co/400x190/063a63/white?text=Fresh+Arrival'" />
+            <div class="video-play-btn">
+              <div class="video-play-circle">▶</div>
+            </div>
+          </a>
+          <div class="video-card-info">
+            <h3>Fresh Tilapia Arrival</h3>
+            <p>Watch our fresh tilapia arrive at the shop early in the morning.</p>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+          <a href="#vid2" class="video-card-thumb">
+            <img src="images/video-poster2.jpg" alt="Cleaning and Gutting"
+                 onerror="this.src='https://placehold.co/400x190/0a6ebd/white?text=Cleaning+%26+Gutting'" />
+            <div class="video-play-btn">
+              <div class="video-play-circle">▶</div>
+            </div>
+          </a>
+          <div class="video-card-info">
+            <h3>Cleaning &amp; Gutting</h3>
+            <p>See how we clean, scale, and gut tilapia so it's ready to cook.</p>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card">
+          <a href="#vid3" class="video-card-thumb">
+            <img src="images/video-poster3.jpg" alt="Shop Tour"
+                 onerror="this.src='https://placehold.co/400x190/28c2b8/white?text=Shop+Tour'" />
+            <div class="video-play-btn">
+              <div class="video-play-circle">▶</div>
+            </div>
+          </a>
+          <div class="video-card-info">
+            <h3>Shop Tour</h3>
+            <p>Take a quick tour of our fish shop at Market Mall House, Room 18.</p>
+          </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-card">
+          <a href="#vid4" class="video-card-thumb">
+            <img src="images/video-poster4.jpg" alt="Cooking Tilapia"
+                 onerror="this.src='https://placehold.co/400x190/f77f00/white?text=Cooking+Tilapia'" />
+            <div class="video-play-btn">
+              <div class="video-play-circle">▶</div>
+            </div>
+          </a>
+          <div class="video-card-info">
+            <h3>Cooking Tilapia</h3>
+            <p>A quick look at how our customers enjoy the tilapia we supply.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:40px;">
+        <p style="color:var(--gray);margin-bottom:18px;">Want to see a specific video or behind-the-scenes content?</p>
+        <a href="https://wa.me/256788381850?text=Hello%20Cheng%20Kelo%20Fresh%20Fish%2C%20I%20would%20like%20to%20request%20a%20video." target="_blank" rel="noopener" class="btn btn-wa">💬 Request a Video on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO MODALS (Pure CSS :target) -->
+
+  <div id="vid1" class="video-modal-overlay">
+    <a href="#" class="video-modal-close" aria-label="Close">✕</a>
+    <video controls autoplay playsinline
+      src="videos/sample1.mp4"
+      poster="images/video-poster1.jpg">
+      Your browser does not support video.
+    </video>
+    <p class="video-modal-title">Fresh Tilapia Arrival</p>
+  </div>
+
+  <div id="vid2" class="video-modal-overlay">
+    <a href="#" class="video-modal-close" aria-label="Close">✕</a>
+    <video controls autoplay playsinline
+      src="videos/sample2.mp4"
+      poster="images/video-poster2.jpg">
+      Your browser does not support video.
+    </video>
+    <p class="video-modal-title">Cleaning &amp; Gutting</p>
+  </div>
+
+  <div id="vid3" class="video-modal-overlay">
+    <a href="#" class="video-modal-close" aria-label="Close">✕</a>
+    <video controls autoplay playsinline
+      src="videos/sample3.mp4"
+      poster="images/video-poster3.jpg">
+      Your browser does not support video.
+    </video>
+    <p class="video-modal-title">Shop Tour</p>
+  </div>
+
+  <div id="vid4" class="video-modal-overlay">
+    <a href="#" class="video-modal-close" aria-label="Close">✕</a>
+    <video controls autoplay playsinline
+      src="videos/sample4.mp4"
+      poster="images/video-poster4.jpg">
+      Your browser does not support video.
+    </video>
+    <p class="video-modal-title">Cooking Tilapia</p>
+  </div>
+
+  <footer>
+p>© 2026 <strong>Cheng Kelo Fresh Fish</strong> Anaka Town Council &nbsp;·&nbsp;
+    <a href="tel:+256788381850">0788 381 850</a><br/>
+     <a href="tel:+256785893198">0785893198</a> &nbsp;·&nbsp; Fresh Tilapia, Every Day.</p>
+  </footer>
+
+  <div class="float-buttons">
+    <a href="https://wa.me/256788381850?text=Hello%20Cheng%20Kelo%20Fresh%20Fish%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener" class="float-wa" title="Order on WhatsApp">💬</a>
+    <a href="tel:+256788381850" class="float-call" title="Call Us">📞</a>
+  </div>
+
+</body>
+</html>

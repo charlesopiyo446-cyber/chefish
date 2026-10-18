@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Cheng Kelo Fresh Fish</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+
+  <header>
+    <input type="checkbox" id="nav-toggle" />
+    <div class="nav-container">
+      <a href="index.html" class="logo-wrap">
+        <img src="images/logo.png" alt="Logo" onerror="this.style.background='#28c2b8';this.style.padding='8px'" />
+        <div class="logo-text-block">
+          <span>Cheng Kelo Fresh Fish</span>
+          <span>Fresh Tilapia Supplier</span>
+        </div>
+      </a>
+      <label for="nav-toggle" class="hamburger-label" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <h1>Contact Us</h1>
+    <p>Reach us by phone, WhatsApp, or visit our shop we're always ready to help.</p>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-section-inner">
+
+        <!-- LEFT: Contact Info -->
+        <div class="contact-info-panel">
+          <div>
+            <h2>Get In Touch</h2>
+            <p>We respond quickly on WhatsApp and by phone every day.</p>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📞</div>
+            <div class="contact-detail-text">
+              <h4>Phone &amp; WhatsApp</h4>
+              <a href="tel:+256788381850">0788 381 850</a><br/>
+              <a href="tel:+256785893198">0785 893 198</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div class="contact-detail-text">
+              <h4>Location</h4>
+              <p>Anaka Town Council<br>
+                 Opposite Kiza Enterprise<br>
+                 Eastern side of Market Mall House<br>
+                 <strong style="color:#fff;">Room No. 18</strong></p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🕒</div>
+            <div class="contact-detail-text">
+              <h4>Business Hours</h4>
+              <p>Monday – Sunday: 7:00 AM – 7:00 PM</p>
+            </div>
+          </div>
+
+          <a href="https://wa.me/256788381850?text=Hello%20Cheng%20Kelo%20Fresh%20Fish%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener" class="btn btn-wa" style="margin-top:8px;justify-content:center;">
+            💬 Chat on WhatsApp
+          </a>
+          <a href="tel:+256788381850" class="btn btn-primary" style="justify-content:center;">
+            📞 Call 0788 381 850/ 0785893198
+          </a>
+        </div>
+
+        <!-- RIGHT: Contact Form (visual — static site) -->
+        <div class="contact-form-panel">
+          <h2>Send a Message</h2>
+          <p style="font-size:0.88rem;color:var(--gray);margin-bottom:22px;">
+            Fill in the form below tap <strong>Send via WhatsApp</strong> and
+            we will receive your message directly on our phone.
+          </p>
+
+          <!-- Form submits to WhatsApp via JS-free approach:
+               We use a simple anchor fallback. The submit button is an anchor that opens WA. -->
+          <div class="form-group">
+            <label for="c-name">Your Name</label>
+            <input type="text" id="c-name" placeholder="e.g. John Okello" />
+          </div>
+          <div class="form-group">
+            <label for="c-phone">Phone Number</label>
+            <input type="tel" id="c-phone" placeholder="e.g. 0700 000 000" />
+          </div>
+          <div class="form-group">
+            <label for="c-subject">Subject</label>
+            <select id="c-subject">
+              <option value="I would like to place an order">Place an Order</option>
+              <option value="I need a bulk wholesale quote">Bulk / Wholesale Quote</option>
+              <option value="I have a question about your products">Product Question</option>
+              <option value="I need directions to your shop">Directions to Shop</option>
+              <option value="I have other enquiry">Other Enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="c-msg">Message</label>
+            <textarea id="c-msg" placeholder="Type your message here..."></textarea>
+          </div>
+
+          <!-- This button uses onclick to build the WA link from the form fields.
+               We add a tiny inline script — the only script on the whole site -->
+          <button onclick="sendToWhatsApp()" class="btn btn-wa" style="width:100%;justify-content:center;margin-bottom:10px;border:none;cursor:pointer;font-family:inherit;">
+            💬 Send via WhatsApp
+          </button>
+          <a href="tel:+256788381850" class="btn btn-primary" style="width:100%;justify-content:center;">
+            📞 Call Us Instead
+          </a>
+
+          <p style="font-size:0.78rem;color:var(--gray);margin-top:14px;text-align:center;">
+            This opens WhatsApp with your message pre-filled. Just tap Send.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  p>© 2026 <strong>Cheng Kelo Fresh Fish</strong> Anaka Town Council &nbsp;·&nbsp;
+    <a href="tel:+256788381850">0788 381 850</a><br/>
+     <a href="tel:+256785893198">0785893198</a> &nbsp;·&nbsp; Fresh Tilapia, Every Day.</p>
+  </footer>
+
+  <div class="float-buttons">
+    <a href="https://wa.me/256788381850?text=Hello%20Cheng%20Kelo%20Fresh%20Fish%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener" class="float-wa" title="Order on WhatsApp">💬</a>
+    <a href="tel:+256788381850" class="float-call" title="Call Us">📞</a>
+  </div>
+
+  <!-- Minimal script for contact form WhatsApp send only -->
+  <script>
+    function sendToWhatsApp() {
+      var name    = document.getElementById('c-name').value || 'Customer';
+      var phone   = document.getElementById('c-phone').value || 'Not provided';
+      var subject = document.getElementById('c-subject').value;
+      var msg     = document.getElementById('c-msg').value || '';
+      var text = 'Hello Cheng Kelo Fresh Fish!%0A%0A'
+               + '*Name:* ' + encodeURIComponent(name) + '%0A'
+               + '*Phone:* ' + encodeURIComponent(phone) + '%0A'
+               + '*Subject:* ' + encodeURIComponent(subject) + '%0A%0A'
+               + '*Message:* ' + encodeURIComponent(msg);
+      window.open('https://wa.me/256788381850?text=' + text, '_blank');
+    }
+  </script>
+
+</body>
+</html>
